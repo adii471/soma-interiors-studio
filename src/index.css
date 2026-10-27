@@ -1,0 +1,71 @@
+:root {
+  color-scheme: dark;
+}
+
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0c0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2723;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c79d67;
+}
+
+/* Luxury architectural glass panel */
+.glass-panel {
+  background: rgba(18, 17, 16, 0.76);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 208, 197, 0.08);
+}
+
+.glass-panel-warm {
+  background: rgba(28, 25, 22, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(199, 157, 103, 0.22);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Subtle gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FCFBF8 0%, #D4A373 50%, #C79D67 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E8E2D6 60%, #A69E92 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Vignette effect */
+.vignette-overlay {
+  background: radial-gradient(circle at center, transparent 40%, rgba(13, 12, 11, 0.8) 100%);
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}

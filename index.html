@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOMA INTERIORS STUDIO — Spaces That Feel Like Home</title>
+    <meta name="description" content="SOMA INTERIORS STUDIO is an architectural interior design atelier curating timeless, tactile living environments through spatial purity and material honesty." />
+
+    <!-- Google Fonts for High-End Editorial Aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@200;300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN for JIT styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              soma: {
+                bg: '#0D0C0B',
+                card: '#151413',
+                cardBorder: 'rgba(216, 208, 197, 0.12)',
+                sand: '#E8E2D6',
+                sandMuted: '#A69E92',
+                cream: '#F8F6F0',
+                bronze: '#C79D67',
+                bronzeDark: '#8F6F44',
+                charcoal: '#1A1816',
+                charcoalLight: '#262320',
+                accent: '#D4A373',
+                warmWhite: '#FCFBF8',
+              }
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              display: ['"Cinzel"', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            letterSpacing: {
+              widest: '.2em',
+              ultra: '.3em',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#0D0C0B] text-[#E8E2D6] selection:bg-[#C79D67] selection:text-black antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
